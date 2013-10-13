@@ -14,8 +14,8 @@ namespace BalloonShop.BusinessTier
 
         static BalloonShopConfiguration()
         {
-            dbConnectionString = ConfigurationManager.ConnectionStrings["BalloonShopConfiguration"].ConnectionString;
-            dbProviderName = ConfigurationManager.ConnectionStrings["BallonShopConfiguration"].ProviderName;
+            dbConnectionString = ConfigurationManager.ConnectionStrings["BalloonShopConnection"].ConnectionString;
+            dbProviderName = ConfigurationManager.ConnectionStrings["BalloonShopConnection"].ProviderName;
         }
 
         /// <summary>

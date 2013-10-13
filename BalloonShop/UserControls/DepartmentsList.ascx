@@ -6,11 +6,10 @@
     </HeaderTemplate>
     <ItemTemplate>
         <asp:HyperLink ID="HyperLink1" runat="server"
-            NavigateUrl='<%# Link.ToDepartment(Eval("DepartmentID").ToString()) %>'
+            NavigateUrl='<%# BalloonShop.App_Code.Link.ToDepartment(Eval("DepartmentID").ToString()) %>'
             Text='<%# HttpUtility.HtmlEncode(Eval("Name").ToString()) %>'
             ToolTip='<%# HttpUtility.HtmlEncode(Eval("Description").ToString()) %>'
-            CssClass='<%# Eval("DepartmentID").ToString == Request.QueryString["DepartmentID"] ? "selected" : "" %>'>
-            [HyperLink1]
+            CssClass='<%# Eval("DepartmentID").ToString() == Request.QueryString["DepartmentID"] ? "selected" : "" %>'>
         </asp:HyperLink>
     </ItemTemplate>
 </asp:DataList>
