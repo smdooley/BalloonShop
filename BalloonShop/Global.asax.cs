@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using BalloonShop.BusinessTier;
 
 namespace BalloonShop
 {
@@ -25,7 +26,7 @@ namespace BalloonShop
         void Application_Error(object sender, EventArgs e)
         {
             // Code that runs when an unhandled error occurs
-
+            Utilities.LogError(Server.GetLastError());
         }
 
         void Session_Start(object sender, EventArgs e)

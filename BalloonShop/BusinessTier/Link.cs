@@ -61,5 +61,33 @@ namespace BalloonShop.BusinessTier
         {
             return ToDepartment(departmentId, "1");
         }
+
+        public static string ToCategory(string departmentId, string categoryId, string page)
+        {
+            if (page == "1")
+            {
+                return BuildAbsolute(String.Format("Catalog.aspx?DepartmentID={0}&CategoryID={1}", departmentId, categoryId));
+            }
+            else
+            {
+                return BuildAbsolute(String.Format("Catalog.aspx?DepartmentID={0}&CategoryID={1}&Page={2}", departmentId, categoryId, page));
+            }
+        }
+
+        public static string ToCategory(string departmentId, string categoryId)
+        {
+            return ToCategory(departmentId, categoryId, "1");
+        }
+
+        public static string ToProduct(string productId)
+        {
+            return BuildAbsolute(String.Format("Product.aspx?ProductID={0}", productId));
+        }
+
+        public static string ToProductImage(string fileName)
+        {
+            //-- build product URL
+            return BuildAbsolute("/ProductImages/" + fileName);
+        }
     }
 }
