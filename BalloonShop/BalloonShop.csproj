@@ -57,14 +57,142 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="App_Themes\BalloonShopDefault\BalloonShop.css" />
+    <Content Include="Catalog.aspx" />
     <Content Include="Error.aspx" />
+    <Content Include="ProductImages\0276001.jpg" />
+    <Content Include="ProductImages\0326801.jpg" />
+    <Content Include="ProductImages\0366101.jpg" />
+    <Content Include="ProductImages\03944l.jpg" />
+    <Content Include="ProductImages\03945L.jpg" />
+    <Content Include="ProductImages\0510801.jpg" />
+    <Content Include="ProductImages\0521201.jpg" />
+    <Content Include="ProductImages\0522101.jpg" />
+    <Content Include="ProductImages\0611401.jpg" />
+    <Content Include="ProductImages\0661701.jpg" />
+    <Content Include="ProductImages\0704901.jpg" />
+    <Content Include="ProductImages\0707401.jpg" />
+    <Content Include="ProductImages\114103P.jpg" />
+    <Content Include="ProductImages\114118p.jpg" />
+    <Content Include="ProductImages\114208p.jpg" />
+    <Content Include="ProductImages\115343P.jpg" />
+    <Content Include="ProductImages\1368601.jpg" />
+    <Content Include="ProductImages\16110p.jpg" />
+    <Content Include="ProductImages\16118p.jpg" />
+    <Content Include="ProductImages\16148p.jpg" />
+    <Content Include="ProductImages\16151p.jpg" />
+    <Content Include="ProductImages\16162p.jpg" />
+    <Content Include="ProductImages\16363p.jpg" />
+    <Content Include="ProductImages\16558p.jpg" />
+    <Content Include="ProductImages\16744p.jpg" />
+    <Content Include="ProductImages\16756p.jpg" />
+    <Content Include="ProductImages\16772p.jpg" />
+    <Content Include="ProductImages\16809p.jpg" />
+    <Content Include="ProductImages\16862p.jpg" />
+    <Content Include="ProductImages\16864p.jpg" />
+    <Content Include="ProductImages\16967p.jpg" />
+    <Content Include="ProductImages\16973p.jpg" />
+    <Content Include="ProductImages\16974p.jpg" />
+    <Content Include="ProductImages\16980p.jpg" />
+    <Content Include="ProductImages\16988p.jpg" />
+    <Content Include="ProductImages\214006p.jpg" />
+    <Content Include="ProductImages\214041p.jpg" />
+    <Content Include="ProductImages\214046p.jpg" />
+    <Content Include="ProductImages\214154p.jpg" />
+    <Content Include="ProductImages\214168p.jpg" />
+    <Content Include="ProductImages\215017p.jpg" />
+    <Content Include="ProductImages\215302p.jpg" />
+    <Content Include="ProductImages\215402p.jpg" />
+    <Content Include="ProductImages\21825b.jpg" />
+    <Content Include="ProductImages\22849b.jpg" />
+    <Content Include="ProductImages\26013.jpg" />
+    <Content Include="ProductImages\28734.jpg" />
+    <Content Include="ProductImages\35732.jpg" />
+    <Content Include="ProductImages\38196.jpg" />
+    <Content Include="ProductImages\38199.jpg" />
+    <Content Include="ProductImages\38202.jpg" />
+    <Content Include="ProductImages\42014.jpg" />
+    <Content Include="ProductImages\42080.jpg" />
+    <Content Include="ProductImages\42139.jpg" />
+    <Content Include="ProductImages\45093.jpg" />
+    <Content Include="ProductImages\68841b.jpg" />
+    <Content Include="ProductImages\7004801.jpg" />
+    <Content Include="ProductImages\7008501.jpg" />
+    <Content Include="ProductImages\81947pl.jpg" />
+    <Content Include="ProductImages\83947.jpg" />
+    <Content Include="ProductImages\83951.jpg" />
+    <Content Include="ProductImages\a1180401.jpg" />
+    <Content Include="ProductImages\t0276001.jpg" />
+    <Content Include="ProductImages\t0326801.jpg" />
+    <Content Include="ProductImages\t0366101.jpg" />
+    <Content Include="ProductImages\t03944l.jpg" />
+    <Content Include="ProductImages\t03945L.jpg" />
+    <Content Include="ProductImages\t0510801.jpg" />
+    <Content Include="ProductImages\t0521201.jpg" />
+    <Content Include="ProductImages\t0522101.jpg" />
+    <Content Include="ProductImages\t0611401.jpg" />
+    <Content Include="ProductImages\t0661701.jpg" />
+    <Content Include="ProductImages\t0704901.jpg" />
+    <Content Include="ProductImages\t0707401.jpg" />
+    <Content Include="ProductImages\t114103p.jpg" />
+    <Content Include="ProductImages\t114118p.jpg" />
+    <Content Include="ProductImages\t114208p.jpg" />
+    <Content Include="ProductImages\t115343p.jpg" />
+    <Content Include="ProductImages\t1368601.jpg" />
+    <Content Include="ProductImages\t16110p.jpg" />
+    <Content Include="ProductImages\t16118p.jpg" />
+    <Content Include="ProductImages\t16148p.jpg" />
+    <Content Include="ProductImages\t16151p.jpg" />
+    <Content Include="ProductImages\t16162p.jpg" />
+    <Content Include="ProductImages\t16363p.jpg" />
+    <Content Include="ProductImages\t16558p.jpg" />
+    <Content Include="ProductImages\t16744p.jpg" />
+    <Content Include="ProductImages\t16756p.jpg" />
+    <Content Include="ProductImages\t16772p.jpg" />
+    <Content Include="ProductImages\t16809p.jpg" />
+    <Content Include="ProductImages\t16862p.jpg" />
+    <Content Include="ProductImages\t16864p.jpg" />
+    <Content Include="ProductImages\t16967p.jpg" />
+    <Content Include="ProductImages\t16973p.jpg" />
+    <Content Include="ProductImages\t16974p.jpg" />
+    <Content Include="ProductImages\t16980p.jpg" />
+    <Content Include="ProductImages\t16988p.jpg" />
+    <Content Include="ProductImages\t214006p.jpg" />
+    <Content Include="ProductImages\t214041p.jpg" />
+    <Content Include="ProductImages\t214046p.jpg" />
+    <Content Include="ProductImages\t214154p.jpg" />
+    <Content Include="ProductImages\t214168p.jpg" />
+    <Content Include="ProductImages\t215017p.jpg" />
+    <Content Include="ProductImages\t215302p.jpg" />
+    <Content Include="ProductImages\t215402p.jpg" />
+    <Content Include="ProductImages\t21825b.jpg" />
+    <Content Include="ProductImages\t22849b.jpg" />
+    <Content Include="ProductImages\t26013.jpg" />
+    <Content Include="ProductImages\t28734.jpg" />
+    <Content Include="ProductImages\t35732.jpg" />
+    <Content Include="ProductImages\t38196.jpg" />
+    <Content Include="ProductImages\t38199.jpg" />
+    <Content Include="ProductImages\t38202.jpg" />
+    <Content Include="ProductImages\t42014.jpg" />
+    <Content Include="ProductImages\t42080.jpg" />
+    <Content Include="ProductImages\t42139.jpg" />
+    <Content Include="ProductImages\t45093.jpg" />
+    <Content Include="ProductImages\t68841b.jpg" />
+    <Content Include="ProductImages\t7004801.jpg" />
+    <Content Include="ProductImages\t7008501.jpg" />
+    <Content Include="ProductImages\t81947pl.jpg" />
+    <Content Include="ProductImages\t83947.jpg" />
+    <Content Include="ProductImages\t83951.jpg" />
+    <Content Include="ProductImages\ta1180401.jpg" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UserControls\CategoriesList.ascx" />
     <Content Include="UserControls\DepartmentsList.ascx" />
+    <Content Include="UserControls\Pager.ascx" />
+    <Content Include="UserControls\ProductsList.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -111,12 +239,33 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductsList.ascx.cs">
+      <DependentUpon>ProductsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductsList.ascx.designer.cs">
+      <DependentUpon>ProductsList.ascx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\Link.cs" />
     <Compile Include="BusinessTier\BalloonShopConfiguration.cs" />
     <Compile Include="BusinessTier\CatalogAccess.cs" />
     <Compile Include="BusinessTier\GenericDataAccess.cs" />
     <Compile Include="BusinessTier\Link.cs" />
     <Compile Include="BusinessTier\Utilities.cs" />
+    <Compile Include="Catalog.aspx.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalog.aspx.designer.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +290,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CategoriesList.ascx.cs">
+      <DependentUpon>CategoriesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CategoriesList.ascx.designer.cs">
+      <DependentUpon>CategoriesList.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\DepartmentsList.ascx.cs">
       <DependentUpon>DepartmentsList.ascx</DependentUpon>

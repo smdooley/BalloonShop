@@ -209,7 +209,7 @@ namespace BalloonShop.BusinessTier
         /// <param name="pageNumber"></param>
         /// <param name="howManyPages"></param>
         /// <returns></returns>
-        public static DataTable GetProductsOnFrontPromo(int pageNumber, out int howManyPages)
+        public static DataTable GetProductsOnFrontPromo(string pageNumber, out int howManyPages)
         {
             //-- get a confiured DbCommand object
             DbCommand comm = GenericDataAccess.CreateCommand();
@@ -306,7 +306,7 @@ namespace BalloonShop.BusinessTier
             howManyPages = (int)Math.Ceiling((double)howManyProducts / (double)BalloonShopConfiguration.ProductsPerPage);
 
             //-- return the page of products
-            return table
+            return table;
         }
 
         /// <summary>

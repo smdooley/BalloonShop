@@ -2,6 +2,8 @@
 
 <%@ Register src="UserControls/DepartmentsList.ascx" tagname="DepartmentsList" tagprefix="uc" %>
 
+<%@ Register src="UserControls/CategoriesList.ascx" tagname="CategoriesList" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
@@ -42,6 +44,7 @@
         <div class="main">
             <uc:DepartmentsList ID="DepartmentsList1" runat="server" />
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <uc1:CategoriesList ID="CategoriesList1" runat="server" />
             </asp:ContentPlaceHolder>
         </div>
         <div class="clear">

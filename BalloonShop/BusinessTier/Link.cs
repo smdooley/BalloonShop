@@ -48,7 +48,7 @@ namespace BalloonShop.BusinessTier
             }
             else
             {
-                return BuildAbsolute(string.Format("Catalog,aspx?DepartmentID={0}&Page={1}", departmentId, page));
+                return BuildAbsolute(string.Format("Catalog.aspx?DepartmentID={0}&Page={1}", departmentId, page));
             }
         }
 
