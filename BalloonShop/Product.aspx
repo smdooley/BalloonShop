@@ -17,4 +17,7 @@
         <b>Price:</b>
         <asp:Label runat="server" ID="priceLabel" CssClass="ProductPrice" Text="Label" />
     </p>
+    <p>
+        <asp:PlaceHolder runat="server" ID="attrPlaceHolder" />
+    </p>
 </asp:Content>

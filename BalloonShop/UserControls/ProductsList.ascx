@@ -3,7 +3,8 @@
 <%@ Register Src="Pager.ascx" TagName="Pager" TagPrefix="uc1" %>
 
 <uc1:Pager ID="topPager" runat="server" Visible="False" />
-<asp:DataList ID="list" runat="server" RepeatColumns="2" CssClass="ProductList">
+<asp:DataList ID="list" runat="server" RepeatColumns="2" CssClass="ProductList" 
+    onitemdatabound="list_ItemDataBound">
     <ItemTemplate>
         <h3 class="ProductTitle">
             <a href="<%# BalloonShop.BusinessTier.Link.ToProduct(Eval("ProductID").ToString()) %>">
@@ -17,6 +18,7 @@
         <p>
             Price: <%# Eval("Price", "{0:c}") %>
         </p>
+        <asp:PlaceHolder runat="server" ID="attrPlaceHolder" />
     </ItemTemplate>
 </asp:DataList>
 <uc1:Pager ID="bottomPager" runat="server" Visible="False" />

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BalloonShop.BusinessTier;
+using System.Data;
 
 namespace BalloonShop
 {
@@ -35,6 +36,40 @@ namespace BalloonShop
 
             // Set the page title
             this.Title = BalloonShopConfiguration.SiteName + productDetails.Name;
+
+            // Obtain the attributes of the product
+            DataTable attrTable = CatalogAccess.GetProductAttributes(productDetails.ProductID.ToString());
+
+            // Temp variables
+            string prevAttributeName = "";
+            string attributeName, attributeValue, attributeValueId;
+
+            // Current DropDown for attribute values
+            Label attributeNameLabel;
+            DropDownList attributeValuesDropDown = new DropDownList();
+
+            // Read the list of attributes
+            foreach (DataRow r in attrTable.Rows)
+            {
+                // Get the attribute data
+                attributeName = r["AttributeName"].ToString();
+                attributeValue = r["AttributeValue"].ToString();
+                attributeValueId = r["AttributeValueID"].ToString();
+
+                // If starting a new attribute (e.g. Colour, Size)
+                if (attributeName != prevAttributeName)
+                {
+                    prevAttributeName = attributeName;
+                    attributeNameLabel = new Label();
+                    attributeNameLabel.Text = attributeName + ": ";
+                    attributeValuesDropDown = new DropDownList();
+                    attrPlaceHolder.Controls.Add(attributeNameLabel);
+                    attrPlaceHolder.Controls.Add(attributeValuesDropDown);
+                }
+
+                // Add a new attribute value to the DropDownList
+                attributeValuesDropDown.Items.Add(new ListItem(attributeValue, attributeValueId));
+            }
         }
     }
 }

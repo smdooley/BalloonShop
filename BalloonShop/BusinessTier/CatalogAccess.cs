@@ -365,5 +365,29 @@ namespace BalloonShop.BusinessTier
             //-- return the page of products
             return table;
         }
+
+        /// <summary>
+        /// Retrieve the list of product attributes
+        /// </summary>
+        /// <param name="productID"></param>
+        /// <returns></returns>
+        public static DataTable GetProductAttributes(string productID)
+        {
+            // Get a configured DbCommand object
+            DbCommand comm = GenericDataAccess.CreateCommand();
+
+            // Set the stored procedure name
+            comm.CommandText = "CatalogGetProductAttributeValues";
+
+            // Create a new parameter
+            DbParameter param = comm.CreateParameter();
+            param.ParameterName = "@ProductID";
+            param.Value = productID;
+            param.DbType = DbType.Int32;
+            comm.Parameters.Add(param);
+
+            // Execute the stored procedure and return the results
+            return GenericDataAccess.ExecuteSelectCommand(comm);
+        }
     }
 }

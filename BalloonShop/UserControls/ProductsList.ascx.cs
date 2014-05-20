@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BalloonShop.BusinessTier;
+using System.Data;
 
 namespace BalloonShop.UserControls
 {
@@ -64,6 +65,53 @@ namespace BalloonShop.UserControls
             // Display pager controls
             topPager.Show(int.Parse(page), howManyPages, firstPageUrl, pagerFormat, false);
             bottomPager.Show(int.Parse(page), howManyPages, firstPageUrl, pagerFormat, true);
+        }
+
+        /// <summary>
+        /// Executes when each item of the list is bound to the data source
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void list_ItemDataBound(object sender, DataListItemEventArgs e)
+        {
+            // Obtain the attributes of the product
+            DataRowView dataRow = (DataRowView)e.Item.DataItem;
+            string productId = dataRow["ProductID"].ToString();
+            DataTable attrTable = CatalogAccess.GetProductAttributes(productId);
+
+            // Get the attribute placeholder
+            PlaceHolder attrPlaceHolder = (PlaceHolder)e.Item.FindControl("attrPlaceHolder");
+
+            // Temp variables
+            string prevAttributeName = "";
+            string attributeName, attributeValue, attributeValueId;
+
+            // Current dropdown for attribute values
+            Label attributeNameLabel;
+            DropDownList attributeValuesDropDown = new DropDownList();
+
+            // Read the list of attributes
+            foreach (DataRow r in attrTable.Rows)
+            {
+                // Get attribute data
+                attributeName = r["AttributeName"].ToString();
+                attributeValue = r["AttributeValue"].ToString();
+                attributeValueId = r["AttributeValueID"].ToString();
+
+                // If starting a new attribute (e.g. Color, Size)
+                if (attributeName != prevAttributeName)
+                {
+                    prevAttributeName = attributeName;
+                    attributeNameLabel = new Label();
+                    attributeNameLabel.Text = attributeName + ": ";
+                    attributeValuesDropDown = new DropDownList();
+                    attrPlaceHolder.Controls.Add(attributeNameLabel);
+                    attrPlaceHolder.Controls.Add(attributeValuesDropDown);
+                }
+
+                // Add a new attribute value to the DropDownList
+                attributeValuesDropDown.Items.Add(new ListItem(attributeValue, attributeValueId));
+            }
         }
     }
 }
