@@ -24,6 +24,13 @@ namespace BalloonShop
             {
                 PopulateControls(productDetails);
             }
+            else
+            {
+                Server.Transfer("~/NotFound.aspx");
+            }
+
+            // 301 redirect to the proper URL if necessary
+            Link.CheckProductUrl(Request.QueryString["ProductID"]);
         }
 
         private void PopulateControls(ProductDetails productDetails)

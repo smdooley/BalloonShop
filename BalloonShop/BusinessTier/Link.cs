@@ -134,5 +134,27 @@ namespace BalloonShop.BusinessTier
             // Return the modified string
             return urlText;
         }
+
+        /// <summary>
+        /// 301 redirects to correct product URL if not already there
+        /// </summary>
+        /// <param name="productId"></param>
+        public static void CheckProductUrl(string productId)
+        {
+            // Get requested URL
+            HttpContext context = HttpContext.Current;
+            string requestedUrl = context.Request.RawUrl;
+
+            // Get last part of proper URL
+            string properUrl = Link.ToProduct(productId);
+            string properUrlTrunc = properUrl.Substring(Math.Abs(properUrl.Length - requestedUrl.Length));
+
+            // 301 redirect to the proper URL if necessary
+            if (requestedUrl != properUrlTrunc)
+            {
+                context.Response.Status = "301 Moved Permanently";
+                context.Response.AddHeader("Location", properUrl);
+            }
+        }
     }
 }

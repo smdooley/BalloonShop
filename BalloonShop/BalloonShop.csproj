@@ -63,6 +63,8 @@
     <Content Include="Catalog.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Images\BalloonShopLogo.png" />
+    <Content Include="NotFound.aspx" />
+    <Content Include="Oops.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="ProductImages\0276001.jpg" />
     <Content Include="ProductImages\0326801.jpg" />
@@ -243,6 +245,20 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oops.aspx.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oops.aspx.designer.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
