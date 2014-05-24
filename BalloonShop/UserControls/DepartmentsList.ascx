@@ -6,7 +6,7 @@
     </HeaderTemplate>
     <ItemTemplate>
         <asp:HyperLink ID="HyperLink1" runat="server"
-            NavigateUrl='<%# BalloonShop.App_Code.Link.ToDepartment(Eval("DepartmentID").ToString()) %>'
+            NavigateUrl='<%# BalloonShop.BusinessTier.Link.ToDepartment(Eval("DepartmentID").ToString()) %>'
             Text='<%# HttpUtility.HtmlEncode(Eval("Name").ToString()) %>'
             ToolTip='<%# HttpUtility.HtmlEncode(Eval("Description").ToString()) %>'
             CssClass='<%# Eval("DepartmentID").ToString() == Request.QueryString["DepartmentID"] ? "selected" : "" %>'>
